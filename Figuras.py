@@ -1,6 +1,6 @@
 import math
 from tkinter import*
-
+"""NABA-OL"""
 
         
 class Figura:
@@ -30,7 +30,7 @@ class Figura:
                 antx = x
                 anty = y
             else:
-                ventana.create_line(antx,anty,x,y,smooth=TRUE,fill="pink")
+                ventana.create_line(antx,anty,x,y,smooth=TRUE,fill="black")
                 antx = x
                 anty = y
 
@@ -135,7 +135,6 @@ class Triangulo (Rectangulo):
                 ventana.create_polygon(antx,anty,x,y,int(x)-int(anty),int(y)+int(antx),fill='yellow',outline='white', width=0)
                 antx = x
                 anty = y
-
 
 root = Tk()
 root.geometry("400x430")
