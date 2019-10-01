@@ -13,10 +13,10 @@ class Figura:
         coordenadasy.append(event.y)
         ventana.create_oval(event.x-1,event.y-1,event.x+1,event.y+1,fill="black",outline="white", width=0)
 
-    def calcArea(resultarea):
+    def calcArea():
         self.resultarea
     
-    def calcPerimetro(resultperimetro):
+    def calcPerimetro():
         self.resultarea
               
 class Circulo (Figura):
@@ -28,11 +28,11 @@ class Circulo (Figura):
         coordenadasy.append(yy[0]-yy[1])
         diagonal=(math.sqrt((pow(coordenadasx[2],2))+(pow(coordenadasy[2],2))))
         radio=diagonal/2
-    def calcArea(resultarea):
+    def calcArea():
         resultarea.set("Area:"+str(math.pi*(pow(distancia.radio,2))))
         return resultarea
     
-    def calcPerimetro(resultperimetro):
+    def calcPerimetro():
         resultperimetro.set("Perimetro:"+str(2*math.pi*distancia.radio))
         return resultperimetro
 
@@ -45,10 +45,10 @@ class Rectangulo(Figura):
     global coordenadasy
     global coordenadasx
     
-    def calcArea (resultarea):
+    def calcArea ():
         resultarea.set("Area:"+str((coordenadax[0]-coordenadax[1])*(coordenadasy[0]-coordenadasy[1])))
         return resultarea
-    def calcPerimetro(resultperimetro):
+    def calcPerimetro():
         resultperimetro.set("Perimetro:"+str((abs(coordenadax[0]-coordenadax[1])*2)+(abs(coordenadasy[0]-coordenadasy[1])*2)))
         return resultperimetro
     
